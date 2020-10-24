@@ -7,4 +7,13 @@ public class ArrayOps{
     }
     return b;
   }
+  public static int largest(int [] arr){
+    int a = 0;
+    for (int i = 0; i < arr.length; i++){
+      if ( arr[i] > a){
+        a = arr[i];
+      }
+    }
+    return a;
+  }
 }
