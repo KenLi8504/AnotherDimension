@@ -49,7 +49,7 @@ public class ArrayOps{
     return SumColArr;
   }
 
-  public static int isRowMagic(int[][]matrix){
+  public static boolean isRowMagic(int[][]matrix){
     int [] sumrows = sumRows(matrix);
     int a = 0;
     for (int i = 0; i < sumrows.length; i++){
@@ -57,6 +57,6 @@ public class ArrayOps{
         a = a + 1;
       }
     }
-    return (a);
+    return (a == matrix.length);
   }
 }
