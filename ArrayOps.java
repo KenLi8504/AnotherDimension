@@ -16,4 +16,11 @@ public class ArrayOps{
     }
     return a;
   }
+  public static int [] sumRows (int [][] matrix){
+    int [] SumArr = new int [matrix.length];
+    for (int i = 0; i < matrix.length; i ++){
+      SumArr[i] = sum(matrix[i]);
+    }
+    return SumArr;
+  }
 }
