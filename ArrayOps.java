@@ -57,6 +57,17 @@ public class ArrayOps{
         a = a + 1;
       }
     }
-    return (a == matrix.length);
+    return (a == sumrows.length);
+  }
+
+  public static boolean isColMagic(int[][] matrix){
+    int [] sumcols = sumCols(matrix);
+    int a = 0;
+    for (int i = 0; i < sumcols.length; i++){
+      if (sumcols [0] == sumcols[i]){
+        a = a + 1;
+      }
+    }
+    return ( a == sumcols.length);
   }
 }
